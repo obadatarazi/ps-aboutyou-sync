@@ -1,0 +1,395 @@
+[2026-03-26 16:10:38] sync.INFO: === Sync started: status === 
+[2026-03-26 16:10:38] sync.INFO: === Sync finished: status in 0s === {"ok":true}
+[2026-03-26 16:10:47] sync.INFO: === Sync started: status === 
+[2026-03-26 16:10:47] sync.INFO: === Sync finished: status in 0s === {"ok":true}
+[2026-03-26 16:10:47] sync.INFO: === Sync started: stock === 
+[2026-03-26 16:10:47] sync.INFO: ProductSync::syncStockAndPrice started 
+[2026-03-26 16:11:08] sync.INFO: === Sync started: products:inc === 
+[2026-03-26 16:11:08] sync.INFO: ProductSync::syncIncremental since 2026-03-26 15:11:08 
+[2026-03-26 16:11:09] sync.INFO: Fetched 0 changed products 
+[2026-03-26 16:11:09] sync.INFO: === Sync finished: products:inc in 0.87s === {"ok":true}
+[2026-03-26 16:11:09] sync.INFO: === Sync started: stock === 
+[2026-03-26 16:11:09] sync.INFO: ProductSync::syncStockAndPrice started 
+[2026-03-26 16:12:24] sync.INFO: === Sync started: products:inc === 
+[2026-03-26 16:12:24] sync.INFO: ProductSync::syncIncremental since 2026-03-26 16:11:09 
+[2026-03-26 16:12:25] sync.INFO: Fetched 0 changed products 
+[2026-03-26 16:12:25] sync.INFO: === Sync finished: products:inc in 0.77s === {"ok":true}
+[2026-03-26 16:12:29] sync.INFO: === Sync started: orders === 
+[2026-03-26 16:12:29] sync.INFO: OrderSync::importNewOrders started 
+[2026-03-26 16:12:31] sync.INFO: Fetched 2 new orders from AboutYou 
+[2026-03-26 16:12:35] sync.ERROR: PS POST addresses failed {"error":"Client error: `POST https://scr-wear.com/api/addresses?output_format=JSON` resulted in a `400 Bad Request` response:
+{\"errors\":[{\"code\":85,\"message\":\"Validation error: \\\"Eigenschap Address->lastname is leeg.\\\"\"}]}
+"}
+[2026-03-26 16:12:35] sync.ERROR: Failed to import AY order # {"error":"Could not create address for AY#"}
+[2026-03-26 16:12:36] sync.ERROR: PS POST addresses failed {"error":"Client error: `POST https://scr-wear.com/api/addresses?output_format=JSON` resulted in a `400 Bad Request` response:
+{\"errors\":[{\"code\":85,\"message\":\"Validation error: \\\"Eigenschap Address->lastname is leeg.\\\"\"}]}
+"}
+[2026-03-26 16:12:36] sync.ERROR: Failed to import AY order # {"error":"Could not create address for AY#"}
+[2026-03-26 16:12:36] sync.INFO: OrderSync::importNewOrders completed {"ay_orders_fetched":2,"orders_imported":0,"orders_skipped":0,"orders_failed":2,"statuses_pushed":0,"status_push_failed":0}
+[2026-03-26 16:12:36] sync.INFO: === Sync finished: orders in 7.19s === {"ok":true}
+[2026-03-26 16:12:55] sync.INFO: === Sync started: order-status === 
+[2026-03-26 16:12:55] sync.INFO: OrderSync::pushOrderStatusUpdates started 
+[2026-03-26 16:12:56] sync.INFO: OrderSync::pushOrderStatusUpdates completed {"ay_orders_fetched":0,"orders_imported":0,"orders_skipped":0,"orders_failed":0,"statuses_pushed":0,"status_push_failed":0}
+[2026-03-26 16:12:56] sync.INFO: === Sync finished: order-status in 1.1s === {"ok":true}
+[2026-03-26 16:13:47] sync.INFO: === Sync started: orders === 
+[2026-03-26 16:13:47] sync.INFO: OrderSync::importNewOrders started 
+[2026-03-26 16:13:48] sync.INFO: Fetched 2 new orders from AboutYou 
+[2026-03-26 16:13:49] sync.ERROR: PS POST addresses failed {"error":"Client error: `POST https://scr-wear.com/api/addresses?output_format=JSON` resulted in a `400 Bad Request` response:
+{\"errors\":[{\"code\":85,\"message\":\"Validation error: \\\"Eigenschap Address->address1 is leeg.\\\"\"}]}
+"}
+[2026-03-26 16:13:49] sync.ERROR: Failed to import AY order #unknown-d75171398898 {"error":"Could not create address for AY#unknown-d75171398898"}
+[2026-03-26 16:13:50] sync.ERROR: PS POST addresses failed {"error":"Client error: `POST https://scr-wear.com/api/addresses?output_format=JSON` resulted in a `400 Bad Request` response:
+{\"errors\":[{\"code\":85,\"message\":\"Validation error: \\\"Eigenschap Address->address1 is leeg.\\\"\"}]}
+"}
+[2026-03-26 16:13:50] sync.ERROR: Failed to import AY order #unknown-03ddb138ddb3 {"error":"Could not create address for AY#unknown-03ddb138ddb3"}
+[2026-03-26 16:13:50] sync.INFO: OrderSync::importNewOrders completed {"ay_orders_fetched":2,"orders_imported":0,"orders_skipped":0,"orders_failed":2,"statuses_pushed":0,"status_push_failed":0}
+[2026-03-26 16:13:50] sync.INFO: === Sync finished: orders in 3.13s === {"ok":true}
+[2026-03-26 16:16:02] sync.INFO: === Sync started: orders === 
+[2026-03-26 16:16:02] sync.INFO: OrderSync::importNewOrders started 
+[2026-03-26 16:16:04] sync.INFO: Fetched 1 new orders from AboutYou 
+[2026-03-26 16:16:05] sync.ERROR: PS POST orders failed {"error":"Server error: `POST https://scr-wear.com/api/orders?output_format=JSON` resulted in a `500 Internal Server Error` response"}
+[2026-03-26 16:16:05] sync.ERROR: Failed to import AY order #unknown-eedede5001c7 {"error":"Failed to create PS order for AY#unknown-eedede5001c7"}
+[2026-03-26 16:16:05] sync.INFO: OrderSync::importNewOrders completed {"ay_orders_fetched":1,"orders_imported":0,"orders_skipped":0,"orders_failed":1,"statuses_pushed":0,"status_push_failed":0}
+[2026-03-26 16:16:05] sync.INFO: === Sync finished: orders in 3.14s === {"ok":true}
+[2026-03-26 16:17:46] sync.INFO: === Sync started: products === 
+[2026-03-26 16:17:46] sync.INFO: ProductSync::syncAll started 
+[2026-03-26 16:18:31] sync.INFO: Fetched 88 products from PrestaShop 
+[2026-03-26 16:18:34] sync.ERROR: PS GET images/products/106 failed {"error":"Server error: `GET https://scr-wear.com/api/images/products/106?output_format=JSON` resulted in a `500 Internal Server Error` response:
+{\"\":[{\"id\":\"106\"},{\"id\":\"357\"},{\"id\":\"358\"},{\"id\":\"359\"},{\"id\":\"360\"},{\"id\":\"361\"},{\"id\":\"362\"}],\"errors\":[{\"code\":5,\"me (truncated...)
+"}
+[2026-03-26 16:18:38] sync.ERROR: PS GET images/products/121 failed {"error":"Server error: `GET https://scr-wear.com/api/images/products/121?output_format=JSON` resulted in a `500 Internal Server Error` response:
+{\"\":[{\"id\":\"121\"},{\"id\":\"1647\"},{\"id\":\"1655\"},{\"id\":\"1657\"},{\"id\":\"1653\"},{\"id\":\"1654\"},{\"id\":\"1656\"},{\"id\":\"1652\"}],\"er (truncated...)
+"}
+[2026-03-26 16:18:40] sync.ERROR: PS GET images/products/151 failed {"error":"Server error: `GET https://scr-wear.com/api/images/products/151?output_format=JSON` resulted in a `500 Internal Server Error` response:
+{\"\":[{\"id\":\"151\"},{\"id\":\"1644\"},{\"id\":\"1638\"},{\"id\":\"1642\"},{\"id\":\"1645\"},{\"id\":\"1643\"},{\"id\":\"1646\"},{\"id\":\"1637\"},{\"id (truncated...)
+"}
+[2026-03-26 16:18:43] sync.ERROR: PS GET images/products/167 failed {"error":"Server error: `GET https://scr-wear.com/api/images/products/167?output_format=JSON` resulted in a `500 Internal Server Error` response:
+{\"\":[{\"id\":\"167\"},{\"id\":\"803\"},{\"id\":\"805\"},{\"id\":\"811\"},{\"id\":\"808\"},{\"id\":\"797\"},{\"id\":\"830\"}],\"errors\":[{\"code\":5,\"me (truncated...)
+"}
+[2026-03-26 16:18:44] sync.ERROR: PS GET images/products/168 failed {"error":"Server error: `GET https://scr-wear.com/api/images/products/168?output_format=JSON` resulted in a `500 Internal Server Error` response:
+{\"\":[{\"id\":\"168\"},{\"id\":\"750\"},{\"id\":\"749\"},{\"id\":\"746\"},{\"id\":\"747\"},{\"id\":\"748\"},{\"id\":\"751\"}],\"errors\":[{\"code\":5,\"me (truncated...)
+"}
+[2026-03-26 16:18:49] sync.ERROR: PS GET images/products/169 failed {"error":"Server error: `GET https://scr-wear.com/api/images/products/169?output_format=JSON` resulted in a `500 Internal Server Error` response:
+{\"\":[{\"id\":\"169\"},{\"id\":\"1297\"},{\"id\":\"833\"},{\"id\":\"834\"},{\"id\":\"835\"},{\"id\":\"832\"},{\"id\":\"837\"},{\"id\":\"980\"},{\"id\":\"981 (truncated...)
+"}
+[2026-03-26 16:18:52] sync.ERROR: PS GET images/products/174 failed {"error":"Server error: `GET https://scr-wear.com/api/images/products/174?output_format=JSON` resulted in a `500 Internal Server Error` response:
+{\"\":[{\"id\":\"174\"},{\"id\":\"1302\"},{\"id\":\"831\"},{\"id\":\"823\"},{\"id\":\"827\"},{\"id\":\"829\"}],\"errors\":[{\"code\":5,\"message\":\"[PHP (truncated...)
+"}
+[2026-03-26 16:18:57] sync.ERROR: PS GET images/products/175 failed {"error":"Server error: `GET https://scr-wear.com/api/images/products/175?output_format=JSON` resulted in a `500 Internal Server Error` response:
+{\"\":[{\"id\":\"175\"},{\"id\":\"1304\"},{\"id\":\"838\"},{\"id\":\"1305\"},{\"id\":\"842\"},{\"id\":\"839\"},{\"id\":\"965\"},{\"id\":\"964\"},{\"id\":\"96 (truncated...)
+"}
+[2026-03-26 16:19:01] sync.ERROR: PS GET images/products/177 failed {"error":"Server error: `GET https://scr-wear.com/api/images/products/177?output_format=JSON` resulted in a `500 Internal Server Error` response:
+{\"\":[{\"id\":\"177\"},{\"id\":\"1298\"},{\"id\":\"856\"},{\"id\":\"859\"},{\"id\":\"855\"},{\"id\":\"853\"},{\"id\":\"860\"},{\"id\":\"861\"},{\"id\":\"862 (truncated...)
+"}
+[2026-03-26 16:19:03] sync.ERROR: PS GET images/products/183 failed {"error":"Server error: `GET https://scr-wear.com/api/images/products/183?output_format=JSON` resulted in a `500 Internal Server Error` response:
+{\"\":[{\"id\":\"183\"},{\"id\":\"1326\"},{\"id\":\"1566\"},{\"id\":\"1569\"},{\"id\":\"1570\"},{\"id\":\"1564\"},{\"id\":\"1567\"},{\"id\":\"1568\"},{\"id (truncated...)
+"}
+[2026-03-26 16:19:07] sync.ERROR: PS GET images/products/187 failed {"error":"Server error: `GET https://scr-wear.com/api/images/products/187?output_format=JSON` resulted in a `500 Internal Server Error` response:
+{\"\":[{\"id\":\"187\"},{\"id\":\"1309\"},{\"id\":\"1308\"},{\"id\":\"1259\"},{\"id\":\"977\"},{\"id\":\"972\"},{\"id\":\"970\"},{\"id\":\"971\"},{\"id\":\"9 (truncated...)
+"}
+[2026-03-26 16:19:11] sync.ERROR: PS GET images/products/188 failed {"error":"Server error: `GET https://scr-wear.com/api/images/products/188?output_format=JSON` resulted in a `500 Internal Server Error` response:
+{\"\":[{\"id\":\"188\"},{\"id\":\"990\"},{\"id\":\"993\"},{\"id\":\"994\"},{\"id\":\"992\"},{\"id\":\"991\"},{\"id\":\"997\"},{\"id\":\"995\"},{\"id\":\"998\" (truncated...)
+"}
+[2026-03-26 16:19:14] sync.ERROR: PS GET images/products/190 failed {"error":"Server error: `GET https://scr-wear.com/api/images/products/190?output_format=JSON` resulted in a `500 Internal Server Error` response:
+{\"\":[{\"id\":\"190\"},{\"id\":\"1311\"},{\"id\":\"1312\"},{\"id\":\"1007\"},{\"id\":\"1006\"},{\"id\":\"1010\"},{\"id\":\"1008\"},{\"id\":\"1013\"},{\"id (truncated...)
+"}
+[2026-03-26 16:19:18] sync.ERROR: PS GET images/products/191 failed {"error":"Server error: `GET https://scr-wear.com/api/images/products/191?output_format=JSON` resulted in a `500 Internal Server Error` response:
+{\"\":[{\"id\":\"191\"},{\"id\":\"1016\"},{\"id\":\"1019\"},{\"id\":\"1017\"},{\"id\":\"1018\"},{\"id\":\"1313\"},{\"id\":\"1314\"},{\"id\":\"1021\"},{\"id (truncated...)
+"}
+[2026-03-26 16:19:24] sync.ERROR: PS GET images/products/193 failed {"error":"Server error: `GET https://scr-wear.com/api/images/products/193?output_format=JSON` resulted in a `500 Internal Server Error` response:
+{\"\":[{\"id\":\"193\"},{\"id\":\"1029\"},{\"id\":\"1028\"},{\"id\":\"1030\"},{\"id\":\"1031\"},{\"id\":\"1032\"},{\"id\":\"1033\"},{\"id\":\"1034\"},{\"id (truncated...)
+"}
+[2026-03-26 16:19:30] sync.ERROR: PS GET images/products/194 failed {"error":"Server error: `GET https://scr-wear.com/api/images/products/194?output_format=JSON` resulted in a `500 Internal Server Error` response:
+{\"\":[{\"id\":\"194\"},{\"id\":\"1038\"},{\"id\":\"1037\"},{\"id\":\"1039\"},{\"id\":\"1040\"},{\"id\":\"1041\"},{\"id\":\"1042\"},{\"id\":\"1043\"},{\"id (truncated...)
+"}
+[2026-03-26 16:19:37] sync.ERROR: PS GET images/products/195 failed {"error":"Server error: `GET https://scr-wear.com/api/images/products/195?output_format=JSON` resulted in a `500 Internal Server Error` response:
+{\"\":[{\"id\":\"195\"},{\"id\":\"1049\"},{\"id\":\"1048\"},{\"id\":\"1050\"},{\"id\":\"1051\"},{\"id\":\"1052\"},{\"id\":\"1053\"},{\"id\":\"1057\"},{\"id (truncated...)
+"}
+[2026-03-26 16:19:39] sync.ERROR: PS GET images/products/196 failed {"error":"Server error: `GET https://scr-wear.com/api/images/products/196?output_format=JSON` resulted in a `500 Internal Server Error` response:
+{\"\":[{\"id\":\"196\"},{\"id\":\"1575\"},{\"id\":\"1334\"},{\"id\":\"1572\"},{\"id\":\"1335\"},{\"id\":\"1573\"},{\"id\":\"1073\"},{\"id\":\"1336\"},{\"id (truncated...)
+"}
+[2026-03-26 16:19:42] sync.ERROR: PS GET images/products/197 failed {"error":"Server error: `GET https://scr-wear.com/api/images/products/197?output_format=JSON` resulted in a `500 Internal Server Error` response:
+{\"\":[{\"id\":\"197\"},{\"id\":\"1078\"},{\"id\":\"1079\"},{\"id\":\"1077\"},{\"id\":\"1076\"}],\"errors\":[{\"code\":5,\"message\":\"[PHP Notice #8 (truncated...)
+"}
+[2026-03-26 16:19:43] sync.ERROR: PS GET images/products/198 failed {"error":"Server error: `GET https://scr-wear.com/api/images/products/198?output_format=JSON` resulted in a `500 Internal Server Error` response:
+{\"\":[{\"id\":\"198\"},{\"id\":\"1084\"},{\"id\":\"1087\"},{\"id\":\"1089\"},{\"id\":\"1090\"},{\"id\":\"1091\"}],\"errors\":[{\"code\":5,\"message\":\" (truncated...)
+"}
+[2026-03-26 16:19:45] sync.ERROR: PS GET images/products/206 failed {"error":"Server error: `GET https://scr-wear.com/api/images/products/206?output_format=JSON` resulted in a `500 Internal Server Error` response:
+{\"\":[{\"id\":\"206\"},{\"id\":\"1546\"},{\"id\":\"1545\"},{\"id\":\"1548\"},{\"id\":\"1547\"},{\"id\":\"1544\"},{\"id\":\"1543\"},{\"id\":\"1549\"}],\"er (truncated...)
+"}
+[2026-03-26 16:19:46] sync.ERROR: PS GET images/products/209 failed {"error":"Server error: `GET https://scr-wear.com/api/images/products/209?output_format=JSON` resulted in a `500 Internal Server Error` response:
+{\"\":[{\"id\":\"209\"},{\"id\":\"1221\"},{\"id\":\"1222\"},{\"id\":\"1223\"},{\"id\":\"1224\"}],\"errors\":[{\"code\":5,\"message\":\"[PHP Notice #8 (truncated...)
+"}
+[2026-03-26 16:19:47] sync.ERROR: PS GET images/products/210 failed {"error":"Server error: `GET https://scr-wear.com/api/images/products/210?output_format=JSON` resulted in a `500 Internal Server Error` response:
+{\"\":[{\"id\":\"210\"},{\"id\":\"1225\"},{\"id\":\"1226\"},{\"id\":\"1227\"},{\"id\":\"1228\"},{\"id\":\"1229\"},{\"id\":\"1231\"},{\"id\":\"1235\"}],\"er (truncated...)
+"}
+[2026-03-26 16:19:51] sync.ERROR: PS GET images/products/211 failed {"error":"Server error: `GET https://scr-wear.com/api/images/products/211?output_format=JSON` resulted in a `500 Internal Server Error` response:
+{\"\":[{\"id\":\"211\"},{\"id\":\"1238\"},{\"id\":\"1239\"},{\"id\":\"1241\"},{\"id\":\"1240\"},{\"id\":\"1243\"},{\"id\":\"1244\"},{\"id\":\"1242\"},{\"id (truncated...)
+"}
+[2026-03-26 16:19:51] sync.ERROR: PS GET images/products/212 failed {"error":"Server error: `GET https://scr-wear.com/api/images/products/212?output_format=JSON` resulted in a `500 Internal Server Error` response:
+{\"\":[{\"id\":\"212\"},{\"id\":\"1250\"},{\"id\":\"1249\"},{\"id\":\"1247\"},{\"id\":\"1248\"},{\"id\":\"1251\"}],\"errors\":[{\"code\":5,\"message\":\" (truncated...)
+"}
+[2026-03-26 16:19:52] sync.ERROR: PS GET images/products/213 failed {"error":"Server error: `GET https://scr-wear.com/api/images/products/213?output_format=JSON` resulted in a `500 Internal Server Error` response:
+{\"\":[{\"id\":\"213\"},{\"id\":\"1256\"},{\"id\":\"1257\"}],\"errors\":[{\"code\":5,\"message\":\"[PHP Notice #8] Undefined index: objectsNo (truncated...)
+"}
+[2026-03-26 16:20:05] sync.INFO: === Sync started: products === 
+[2026-03-26 16:20:05] sync.INFO: ProductSync::syncAll started 
+[2026-03-26 16:20:48] sync.INFO: Fetched 88 products from PrestaShop 
+[2026-03-26 16:22:56] sync.INFO: AY upsertProducts batch ok {"count":50,"status":200}
+[2026-03-26 16:24:37] sync.INFO: AY upsertProducts batch ok {"count":38,"status":200}
+[2026-03-26 16:24:37] sync.INFO: ProductSync::syncAll completed {"fetched":88,"pushed":88,"skipped":0,"failed":0}
+[2026-03-26 16:24:37] sync.INFO: === Sync finished: products in 272.07s === {"ok":true}
+[2026-03-26 16:34:45] sync.INFO: === Sync started: orders === 
+[2026-03-26 16:34:45] sync.INFO: OrderSync::importNewOrders started 
+[2026-03-26 16:34:47] sync.INFO: Fetched 1 new orders from AboutYou 
+[2026-03-26 16:34:48] sync.ERROR: PS POST orders failed {"error":"Server error: `POST https://scr-wear.com/api/orders?output_format=JSON` resulted in a `500 Internal Server Error` response"}
+[2026-03-26 16:34:48] sync.ERROR: Failed to import AY order #unknown-eedede5001c7 {"error":"Failed to create PS order for AY#unknown-eedede5001c7"}
+[2026-03-26 16:34:48] sync.INFO: OrderSync::importNewOrders completed {"ay_orders_fetched":1,"orders_imported":0,"orders_skipped":0,"orders_failed":1,"statuses_pushed":0,"status_push_failed":0}
+[2026-03-26 16:34:48] sync.INFO: === Sync finished: orders in 3.76s === {"ok":true}
+[2026-03-26 16:36:24] sync.INFO: === Sync started: orders === 
+[2026-03-26 16:36:24] sync.INFO: OrderSync::importNewOrders started 
+[2026-03-26 16:36:26] sync.INFO: Fetched 1 new orders from AboutYou 
+[2026-03-26 16:36:27] sync.ERROR: Failed to import AY order #unknown-eedede5001c7 {"error":"Could not resolve AY items to PS product references for AY#unknown-eedede5001c7"}
+[2026-03-26 16:36:27] sync.INFO: OrderSync::importNewOrders completed {"ay_orders_fetched":1,"orders_imported":0,"orders_skipped":0,"orders_failed":1,"statuses_pushed":0,"status_push_failed":0}
+[2026-03-26 16:36:27] sync.INFO: === Sync finished: orders in 2.7s === {"ok":true}
+[2026-03-26 16:36:45] sync.INFO: === Sync started: orders === 
+[2026-03-26 16:36:45] sync.INFO: OrderSync::importNewOrders started 
+[2026-03-26 16:36:47] sync.INFO: Fetched 1 new orders from AboutYou 
+[2026-03-26 16:36:48] sync.ERROR: Failed to import AY order #unknown-eedede5001c7 {"error":"Could not resolve AY items to PS product references for AY#unknown-eedede5001c7"}
+[2026-03-26 16:36:48] sync.INFO: OrderSync::importNewOrders completed {"ay_orders_fetched":1,"orders_imported":0,"orders_skipped":0,"orders_failed":1,"statuses_pushed":0,"status_push_failed":0}
+[2026-03-26 16:36:48] sync.INFO: === Sync finished: orders in 2.33s === {"ok":true}
+[2026-03-26 16:37:08] sync.INFO: === Sync started: orders === 
+[2026-03-26 16:37:08] sync.INFO: OrderSync::importNewOrders started 
+[2026-03-26 16:37:09] sync.INFO: Fetched 0 new orders from AboutYou 
+[2026-03-26 16:37:09] sync.INFO: OrderSync::importNewOrders completed {"ay_orders_fetched":0,"orders_imported":0,"orders_skipped":0,"orders_failed":0,"statuses_pushed":0,"status_push_failed":0}
+[2026-03-26 16:37:09] sync.INFO: === Sync finished: orders in 0.85s === {"ok":true}
+[2026-03-26 16:39:06] sync.INFO: === Sync started: orders === 
+[2026-03-26 16:39:06] sync.INFO: OrderSync::importNewOrders started 
+[2026-03-26 16:39:08] sync.INFO: Fetched 0 new orders from AboutYou 
+[2026-03-26 16:39:08] sync.INFO: OrderSync::importNewOrders completed {"ay_orders_fetched":0,"orders_imported":0,"orders_skipped":0,"orders_failed":0,"statuses_pushed":0,"status_push_failed":0}
+[2026-03-26 16:39:08] sync.INFO: === Sync finished: orders in 2.43s === {"ok":true}
+[2026-03-26 16:51:53] ay-fix.ERROR: AY product patch failed {"sku":"49485059719496","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485059719496` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 16:51:53] ay-fix.ERROR: AY product patch failed {"sku":"49485059686728","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485059686728` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 16:51:54] ay-fix.ERROR: AY product patch failed {"sku":"49485059785032","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485059785032` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 16:51:54] ay-fix.ERROR: AY product patch failed {"sku":"49485060243784","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485060243784` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 16:51:54] ay-fix.ERROR: AY product patch failed {"sku":"49485060276552","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485060276552` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 16:51:54] ay-fix.ERROR: AY product patch failed {"sku":"49485060309320","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485060309320` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 16:51:54] ay-fix.ERROR: AY product patch failed {"sku":"49485060374856","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485060374856` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 16:51:55] ay-fix.ERROR: AY product patch failed {"sku":"49485061914952","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485061914952` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 16:51:55] ay-fix.ERROR: AY product patch failed {"sku":"49485061947720","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485061947720` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 16:51:55] ay-fix.ERROR: AY product patch failed {"sku":"49485061980488","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485061980488` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 16:51:55] ay-fix.ERROR: AY product patch failed {"sku":"49485062013256","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485062013256` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 16:51:56] ay-fix.ERROR: AY product patch failed {"sku":"49485061488968","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485061488968` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 16:51:56] ay-fix.ERROR: AY product patch failed {"sku":"49485061521736","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485061521736` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 16:51:56] ay-fix.ERROR: AY product patch failed {"sku":"49485061554504","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485061554504` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 16:51:56] ay-fix.ERROR: AY product patch failed {"sku":"49485061587272","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485061587272` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 16:51:57] ay-fix.ERROR: AY product patch failed {"sku":"49485061620040","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485061620040` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 16:51:57] ay-fix.ERROR: AY product patch failed {"sku":"49485060079944","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485060079944` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 16:51:57] ay-fix.ERROR: AY product patch failed {"sku":"49485060112712","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485060112712` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 16:51:57] ay-fix.ERROR: AY product patch failed {"sku":"49485060145480","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485060145480` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 16:51:57] ay-fix.ERROR: AY product patch failed {"sku":"49485060211016","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485060211016` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 16:51:58] ay-fix.ERROR: AY product patch failed {"sku":"49485060178248","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485060178248` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 16:51:58] ay-fix.ERROR: AY product patch failed {"sku":"49485059883336","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485059883336` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 16:51:58] ay-fix.ERROR: AY product patch failed {"sku":"49485059981640","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485059981640` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 16:51:59] ay-fix.ERROR: AY product patch failed {"sku":"49485059916104","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485059916104` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 16:51:59] ay-fix.ERROR: AY product patch failed {"sku":"49485059948872","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485059948872` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 16:51:59] ay-fix.ERROR: AY product patch failed {"sku":"49485060047176","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485060047176` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 16:51:59] ay-fix.ERROR: AY product patch failed {"sku":"49485060342088","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485060342088` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 16:52:00] ay-fix.ERROR: AY product patch failed {"sku":"49485060407624","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485060407624` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 16:52:00] ay-fix.ERROR: AY product patch failed {"sku":"49485060473160","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485060473160` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 16:52:00] ay-fix.ERROR: AY product patch failed {"sku":"49485060440392","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485060440392` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 16:52:00] ay-fix.ERROR: AY product patch failed {"sku":"49485062078792","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485062078792` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 16:52:01] ay-fix.ERROR: AY product patch failed {"sku":"49485062046024","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485062046024` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 16:52:01] ay-fix.ERROR: AY product patch failed {"sku":"49485062111560","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485062111560` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 16:52:01] ay-fix.ERROR: AY product patch failed {"sku":"49485062177096","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485062177096` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 16:52:02] ay-fix.ERROR: AY product patch failed {"sku":"49485059752264","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485059752264` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 16:52:02] ay-fix.ERROR: AY product patch failed {"sku":"49485059817800","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485059817800` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 16:52:02] ay-fix.ERROR: AY product patch failed {"sku":"49485059850568","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485059850568` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 16:52:02] ay-fix.ERROR: AY product patch failed {"sku":"49485061816648","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485061816648` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 16:52:02] ay-fix.ERROR: AY product patch failed {"sku":"49485061849416","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485061849416` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 16:52:03] ay-fix.ERROR: AY product patch failed {"sku":"49485061882184","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485061882184` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 16:52:03] ay-fix.ERROR: AY product patch failed {"sku":"49485060669768","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485060669768` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 16:52:03] ay-fix.ERROR: AY product patch failed {"sku":"49485060702536","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485060702536` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 16:52:03] ay-fix.ERROR: AY product patch failed {"sku":"49485060735304","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485060735304` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 16:52:04] ay-fix.ERROR: AY product patch failed {"sku":"49485060768072","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485060768072` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 16:52:04] ay-fix.ERROR: AY product patch failed {"sku":"49485060800840","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485060800840` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 16:52:04] ay-fix.ERROR: AY product patch failed {"sku":"49485061652808","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485061652808` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 16:52:04] ay-fix.ERROR: AY product patch failed {"sku":"49485061685576","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485061685576` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 16:52:04] ay-fix.ERROR: AY product patch failed {"sku":"49485061718344","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485061718344` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 16:52:05] ay-fix.ERROR: AY product patch failed {"sku":"49485061751112","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485061751112` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 16:52:05] ay-fix.ERROR: AY product patch failed {"sku":"49485061783880","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485061783880` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 16:52:05] ay-fix.ERROR: AY product patch failed {"sku":"49485060997448","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485060997448` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 16:52:05] ay-fix.ERROR: AY product patch failed {"sku":"49485061030216","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485061030216` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 16:52:06] ay-fix.ERROR: AY product patch failed {"sku":"49485061062984","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485061062984` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 16:52:06] ay-fix.ERROR: AY product patch failed {"sku":"49485061095752","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485061095752` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 16:52:06] ay-fix.ERROR: AY product patch failed {"sku":"49485061128520","error":"Client error: `PATCH https://partner.aboutyou.com/api/v1/products/49485061128520` resulted in a `405 Method Not Allowed` response:
+Method not allowed
+"}
+[2026-03-26 17:33:58] sync.INFO: === Sync started: orders === 
+[2026-03-26 17:33:58] sync.INFO: OrderSync::importNewOrders started 
+[2026-03-26 17:34:00] sync.INFO: Fetched 0 new orders from AboutYou 
+[2026-03-26 17:34:00] sync.INFO: OrderSync::importNewOrders completed {"ay_orders_fetched":0,"orders_imported":0,"orders_skipped":0,"orders_failed":0,"statuses_pushed":0,"status_push_failed":0}
+[2026-03-26 17:34:00] sync.INFO: === Sync finished: orders in 1.52s === {"ok":true}
+[2026-03-26 17:34:32] sync.INFO: === Sync started: orders === 
+[2026-03-26 17:34:32] sync.INFO: OrderSync::importNewOrders started 
+[2026-03-26 17:34:33] sync.INFO: Fetched 0 new orders from AboutYou 
+[2026-03-26 17:34:33] sync.INFO: OrderSync::importNewOrders completed {"ay_orders_fetched":0,"orders_imported":0,"orders_skipped":0,"orders_failed":0,"statuses_pushed":0,"status_push_failed":0}
+[2026-03-26 17:34:33] sync.INFO: === Sync finished: orders in 1.41s === {"ok":true}
+[2026-03-26 17:35:37] sync.INFO: === Sync started: orders === 
+[2026-03-26 17:35:37] sync.INFO: OrderSync::importNewOrders started 
+[2026-03-26 17:35:40] sync.INFO: Fetched 0 new orders from AboutYou 
+[2026-03-26 17:35:40] sync.INFO: OrderSync::importNewOrders completed {"ay_orders_fetched":0,"orders_imported":0,"orders_skipped":0,"orders_failed":0,"statuses_pushed":0,"status_push_failed":0}
+[2026-03-26 17:35:40] sync.INFO: === Sync finished: orders in 3.62s === {"ok":true}
+[2026-03-26 17:35:53] sync.INFO: === Sync started: orders === 
+[2026-03-26 17:35:53] sync.INFO: OrderSync::importNewOrders started 
+[2026-03-26 17:35:55] sync.INFO: Fetched 1 new orders from AboutYou 
+[2026-03-26 17:35:55] sync.ERROR: PS getResourceIds(customers) failed {"error":"Client error: `GET https://scr-wear.com/api/customers?filter%5Bemail%5D=&output_format=JSON` resulted in a `400 Bad Request` response:
+{\"errors\":[{\"code\":33,\"message\":\"The filter \\\"email\\\" is malformed.\"}]}
+"}
+[2026-03-26 17:35:56] sync.ERROR: PS POST customers failed {"error":"Client error: `POST https://scr-wear.com/api/customers?output_format=JSON` resulted in a `400 Bad Request` response:
+{\"errors\":[{\"code\":85,\"message\":\"Validation error: \\\"Eigenschap Customer->email is leeg.\\\"\"}]}
+","response_body":"{\"errors\":[{\"code\":85,\"message\":\"Validation error: \\\"Eigenschap Customer->email is leeg.\\\"\"}]}"}
+[2026-03-26 17:35:56] sync.ERROR: Failed to import AY order #sandbox-0-100000001396 {"error":"Could not find/create customer for AY#sandbox-0-100000001396"}
+[2026-03-26 17:35:56] sync.INFO: OrderSync::importNewOrders completed {"ay_orders_fetched":1,"orders_imported":0,"orders_skipped":0,"orders_failed":1,"statuses_pushed":0,"status_push_failed":0}
+[2026-03-26 17:35:56] sync.INFO: === Sync finished: orders in 2.7s === {"ok":true}
+[2026-03-26 17:36:18] sync.INFO: === Sync started: orders === 
+[2026-03-26 17:36:18] sync.INFO: OrderSync::importNewOrders started 
+[2026-03-26 17:36:19] sync.INFO: Fetched 1 new orders from AboutYou 
+[2026-03-26 17:36:22] sync.WARNING: Could not resolve AY item SKU to PS product {"sku":"49485059686728"}
+[2026-03-26 17:36:23] sync.WARNING: Could not resolve AY item SKU to PS product {"sku":"49485059785032"}
+[2026-03-26 17:36:24] sync.WARNING: Could not resolve AY item SKU to PS product {"sku":"49485059686728"}
+[2026-03-26 17:36:26] sync.WARNING: Could not resolve AY item SKU to PS product {"sku":"49485059686728"}
+[2026-03-26 17:36:26] sync.WARNING: Could not resolve AY item SKU to PS product {"sku":"49485059785032"}
+[2026-03-26 17:36:26] sync.ERROR: Failed to import AY order #sandbox-0-100000001396 {"error":"Could not resolve AY items to PS product references for AY#sandbox-0-100000001396"}
+[2026-03-26 17:36:26] sync.INFO: OrderSync::importNewOrders completed {"ay_orders_fetched":1,"orders_imported":0,"orders_skipped":0,"orders_failed":1,"statuses_pushed":0,"status_push_failed":0}
+[2026-03-26 17:36:26] sync.INFO: === Sync finished: orders in 8.4s === {"ok":true}
+[2026-03-26 17:36:58] sync.INFO: === Sync started: orders === 
+[2026-03-26 17:36:58] sync.INFO: OrderSync::importNewOrders started 
+[2026-03-26 17:36:59] sync.INFO: Fetched 1 new orders from AboutYou 
+[2026-03-26 17:37:02] sync.WARNING: Could not resolve AY item SKU to PS product {"sku":"49485059686728"}
+[2026-03-26 17:37:04] sync.WARNING: Could not resolve AY item SKU to PS product {"sku":"49485059785032"}
+[2026-03-26 17:37:07] sync.WARNING: Could not resolve AY item SKU to PS product {"sku":"49485059686728"}
+[2026-03-26 17:37:08] sync.WARNING: Could not resolve AY item SKU to PS product {"sku":"49485059686728"}
+[2026-03-26 17:37:09] sync.WARNING: Could not resolve AY item SKU to PS product {"sku":"49485059785032"}
+[2026-03-26 17:37:09] sync.ERROR: Failed to import AY order #sandbox-0-100000001396 {"error":"Could not resolve AY items to PS product references for AY#sandbox-0-100000001396"}
+[2026-03-26 17:37:09] sync.INFO: OrderSync::importNewOrders completed {"ay_orders_fetched":1,"orders_imported":0,"orders_skipped":0,"orders_failed":1,"statuses_pushed":0,"status_push_failed":0}
+[2026-03-26 17:37:09] sync.INFO: === Sync finished: orders in 11.8s === {"ok":true}
+[2026-03-26 17:38:39] sync.INFO: === Sync started: orders === 
+[2026-03-26 17:38:39] sync.INFO: OrderSync::importNewOrders started 
+[2026-03-26 17:38:40] sync.INFO: Fetched 1 new orders from AboutYou 
+[2026-03-26 17:38:43] sync.WARNING: Could not resolve AY item SKU to PS product {"sku":"49485059686728"}
+[2026-03-26 17:38:45] sync.WARNING: Could not resolve AY item SKU to PS product {"sku":"49485059785032"}
+[2026-03-26 17:38:47] sync.WARNING: Could not resolve AY item SKU to PS product {"sku":"49485059686728"}
+[2026-03-26 17:38:50] sync.WARNING: Could not resolve AY item SKU to PS product {"sku":"49485059686728"}
+[2026-03-26 17:38:52] sync.WARNING: Could not resolve AY item SKU to PS product {"sku":"49485059785032"}
+[2026-03-26 17:38:52] sync.ERROR: Failed to import AY order #sandbox-0-100000001396 {"error":"Could not resolve AY items to PS product references for AY#sandbox-0-100000001396"}
+[2026-03-26 17:38:52] sync.INFO: OrderSync::importNewOrders completed {"ay_orders_fetched":1,"orders_imported":0,"orders_skipped":0,"orders_failed":1,"statuses_pushed":0,"status_push_failed":0}
+[2026-03-26 17:38:52] sync.INFO: === Sync finished: orders in 12.74s === {"ok":true}

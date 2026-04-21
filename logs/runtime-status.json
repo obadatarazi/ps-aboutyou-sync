@@ -1,0 +1,15 @@
+{
+    "active": true,
+    "run_id": "b338a2b043130983",
+    "command": "stock",
+    "started_at": "2026-04-20T19:20:31+00:00",
+    "phase": "stock_sync",
+    "current_product_id": null,
+    "current_sequence": 0,
+    "total_items": 0,
+    "done_items": 0,
+    "pushed_items": 0,
+    "failed_items": 0,
+    "last_message": "Running stock and price sync",
+    "updated_at": "2026-04-20T19:20:31+00:00"
+}

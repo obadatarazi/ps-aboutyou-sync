@@ -1,0 +1,22 @@
+[2026-04-18 04:31:56] sync.INFO: === Sync started: products === {"run_id":"35b66e5bd961ccd5","command":"products"}
+[2026-04-18 04:31:56] sync.INFO: ProductSync::syncAll started 
+[2026-04-18 04:32:49] sync.INFO: Fetched 88 products from PrestaShop 
+[2026-04-18 04:34:31] sync.WARNING: AyImageNormalizer: HTTP error fetching image {"url":"https://scr-wear.com/api/images/products/198/1084?ws_key=ObadaTeastAPI0096394785749032271","status":500}
+[2026-04-18 04:34:31] sync.WARNING: AyImageNormalizer: HTTP error fetching image {"url":"https://scr-wear.com/api/images/products/198/1087?ws_key=ObadaTeastAPI0096394785749032271","status":500}
+[2026-04-18 04:34:31] sync.WARNING: AyImageNormalizer: HTTP error fetching image {"url":"https://scr-wear.com/api/images/products/198/1089?ws_key=ObadaTeastAPI0096394785749032271","status":500}
+[2026-04-18 04:34:32] sync.WARNING: AyImageNormalizer: HTTP error fetching image {"url":"https://scr-wear.com/api/images/products/198/1090?ws_key=ObadaTeastAPI0096394785749032271","status":500}
+[2026-04-18 04:34:32] sync.WARNING: AyImageNormalizer: HTTP error fetching image {"url":"https://scr-wear.com/api/images/products/198/1091?ws_key=ObadaTeastAPI0096394785749032271","status":500}
+[2026-04-18 04:34:34] sync.WARNING: AyImageNormalizer: HTTP error fetching image {"url":"https://scr-wear.com/api/images/products/200/1119?ws_key=ObadaTeastAPI0096394785749032271","status":500}
+[2026-04-18 04:34:34] sync.WARNING: AyImageNormalizer: HTTP error fetching image {"url":"https://scr-wear.com/api/images/products/200/1120?ws_key=ObadaTeastAPI0096394785749032271","status":500}
+[2026-04-18 04:34:35] sync.WARNING: AyImageNormalizer: HTTP error fetching image {"url":"https://scr-wear.com/api/images/products/200/1121?ws_key=ObadaTeastAPI0096394785749032271","status":500}
+[2026-04-18 04:34:35] sync.WARNING: AyImageNormalizer: HTTP error fetching image {"url":"https://scr-wear.com/api/images/products/200/1122?ws_key=ObadaTeastAPI0096394785749032271","status":500}
+[2026-04-18 04:34:35] sync.WARNING: AyImageNormalizer: HTTP error fetching image {"url":"https://scr-wear.com/api/images/products/200/1123?ws_key=ObadaTeastAPI0096394785749032271","status":500}
+[2026-04-18 04:34:36] sync.WARNING: AyImageNormalizer: HTTP error fetching image {"url":"https://scr-wear.com/api/images/products/200/1124?ws_key=ObadaTeastAPI0096394785749032271","status":500}
+[2026-04-18 04:34:36] sync.WARNING: AyImageNormalizer: HTTP error fetching image {"url":"https://scr-wear.com/api/images/products/200/1125?ws_key=ObadaTeastAPI0096394785749032271","status":500}
+[2026-04-18 04:34:36] sync.WARNING: AyImageNormalizer: HTTP error fetching image {"url":"https://scr-wear.com/api/images/products/200/1126?ws_key=ObadaTeastAPI0096394785749032271","status":500}
+[2026-04-18 04:34:36] sync.WARNING: AyImageNormalizer: HTTP error fetching image {"url":"https://scr-wear.com/api/images/products/200/1127?ws_key=ObadaTeastAPI0096394785749032271","status":500}
+[2026-04-18 04:34:37] sync.WARNING: AyImageNormalizer: HTTP error fetching image {"url":"https://scr-wear.com/api/images/products/200/1128?ws_key=ObadaTeastAPI0096394785749032271","status":500}
+[2026-04-18 04:42:05] sync.INFO: AY upsertProducts batch ok {"count":50,"status":200,"batch_request_id":"8dd15303-fd95-1701-0c2d-c72814b83acf"}
+[2026-04-18 04:50:08] sync.INFO: AY upsertProducts batch ok {"count":38,"status":200,"batch_request_id":"f1436c9f-ef10-93a1-72fa-59769240c520"}
+[2026-04-18 04:50:08] sync.INFO: ProductSync::syncAll completed {"fetched":88,"pushed":88,"skipped":0,"failed":0}
+[2026-04-18 04:50:08] sync.INFO: === Sync finished: products in 1092.85s === {"ok":true,"run_id":"35b66e5bd961ccd5","command":"products"}

@@ -1,0 +1,35 @@
+{
+  "name": "yourcompany/ps-aboutyou-sync",
+  "description": "PrestaShop → AboutYou Seller Center integration middleware",
+  "type": "project",
+  "require": {
+    "php": ">=7.4",
+    "guzzlehttp/guzzle": "^7.5",
+    "monolog/monolog": "^2.8",
+    "vlucas/phpdotenv": "^5.4",
+    "symfony/console": "^5.4",
+    "php-di/php-di": "^6.4"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Sync\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Sync\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "sync:products":  "php bin/sync.php products",
+    "sync:stock":     "php bin/sync.php stock",
+    "sync:orders":    "php bin/sync.php orders",
+    "sync:status":    "php bin/sync.php order-status",
+    "sync:all":       "php bin/sync.php all",
+    "ui:serve":       "php -S 0.0.0.0:8080 -t public",
+    "test":           "phpunit"
+  }
+}

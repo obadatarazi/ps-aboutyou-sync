@@ -1,0 +1,67 @@
+[2026-04-17 19:05:04] sync.INFO: === Sync started: status === {"run_id":"56f81a899431d5f8","command":"status"}
+[2026-04-17 19:05:04] sync.INFO: === Sync finished: status in 0s === {"ok":true,"run_id":"56f81a899431d5f8","command":"status"}
+[2026-04-17 19:05:04] sync.INFO: === Sync started: products:inc === {"run_id":"029a4f19d6e49e77","command":"products:inc"}
+[2026-04-17 19:05:04] sync.INFO: ProductSync::syncIncremental since 2026-03-26 16:24:37 
+[2026-04-17 19:05:07] sync.INFO: Fetched 0 changed products 
+[2026-04-17 19:05:07] sync.INFO: === Sync finished: products:inc in 3s === {"ok":true,"run_id":"029a4f19d6e49e77","command":"products:inc"}
+[2026-04-17 19:05:07] sync.INFO: === Sync started: stock === {"run_id":"3c16472f24ad79d8","command":"stock"}
+[2026-04-17 19:05:07] sync.INFO: ProductSync::syncStockAndPrice started 
+[2026-04-17 19:08:25] sync.INFO: === Sync started: status === {"run_id":"59d84e299e231430","command":"status"}
+[2026-04-17 19:08:25] sync.INFO: === Sync finished: status in 0s === {"ok":true,"run_id":"59d84e299e231430","command":"status"}
+[2026-04-17 19:08:31] sync.INFO: === Sync started: products:inc === {"run_id":"c940194b95bc437b","command":"products:inc"}
+[2026-04-17 19:08:31] sync.INFO: ProductSync::syncIncremental since 2026-03-26 16:24:37 
+[2026-04-17 19:08:38] sync.INFO: Fetched 0 changed products 
+[2026-04-17 19:08:38] sync.INFO: === Sync finished: products:inc in 7.28s === {"ok":true,"run_id":"c940194b95bc437b","command":"products:inc"}
+[2026-04-17 19:09:08] sync.INFO: === Sync started: stock === {"run_id":"860f9a9237521ed9","command":"stock"}
+[2026-04-17 19:09:08] sync.INFO: ProductSync::syncStockAndPrice started 
+[2026-04-17 19:09:31] sync.INFO: === Sync started: products === {"run_id":"e25109b8d94e7f4a","command":"products"}
+[2026-04-17 19:09:31] sync.INFO: ProductSync::syncAll started 
+[2026-04-17 19:10:18] sync.INFO: === Sync started: stock === {"run_id":"a0f5dfab0911639b","command":"stock"}
+[2026-04-17 19:10:18] sync.INFO: ProductSync::syncStockAndPrice started 
+[2026-04-17 19:12:41] sync.INFO: === Sync started: stock === {"run_id":"8fd08a05a0c4d6bc","command":"stock"}
+[2026-04-17 19:12:41] sync.INFO: ProductSync::syncStockAndPrice started 
+[2026-04-17 19:12:41] sync.INFO: PS stock fetch started 
+[2026-04-17 19:12:43] sync.INFO: PS stock ids fetched {"count":604}
+[2026-04-17 19:14:32] sync.INFO: PS stock fetch progress {"processed":250,"total":604}
+[2026-04-17 19:16:52] sync.INFO: === Sync started: products === {"run_id":"78e5248336bf2a91","command":"products"}
+[2026-04-17 19:16:52] sync.INFO: ProductSync::syncAll started 
+[2026-04-17 19:17:33] sync.INFO: Fetched 88 products from PrestaShop 
+[2026-04-17 19:19:27] sync.INFO: AY upsertProducts skipped by safety mode {"count":50}
+[2026-04-17 19:21:31] sync.INFO: AY upsertProducts skipped by safety mode {"count":38}
+[2026-04-17 19:21:31] sync.INFO: ProductSync::syncAll completed {"fetched":88,"pushed":88,"skipped":0,"failed":0}
+[2026-04-17 19:21:31] sync.INFO: === Sync finished: products in 279.21s === {"ok":true,"run_id":"78e5248336bf2a91","command":"products"}
+[2026-04-17 19:23:39] sync.INFO: === Sync started: products === {"run_id":"56f2d3adebc212b3","command":"products"}
+[2026-04-17 19:23:39] sync.INFO: ProductSync::syncAll started 
+[2026-04-17 19:24:20] sync.INFO: Fetched 88 products from PrestaShop 
+[2026-04-17 19:26:15] sync.INFO: AY upsertProducts batch ok {"count":50,"status":200,"batch_request_id":"d2a1ac04-0a6f-6bca-a79e-a6a9d5199b01"}
+[2026-04-17 19:28:11] sync.INFO: AY upsertProducts batch ok {"count":38,"status":200,"batch_request_id":"2f24ff36-9bd1-b568-52dd-159220337237"}
+[2026-04-17 19:28:11] sync.INFO: ProductSync::syncAll completed {"fetched":88,"pushed":88,"skipped":0,"failed":0}
+[2026-04-17 19:28:11] sync.INFO: === Sync finished: products in 272.74s === {"ok":true,"run_id":"56f2d3adebc212b3","command":"products"}
+[2026-04-17 20:00:58] ay-fix.ERROR: AY getProducts failed {"error":"Client error: `GET https://partner.aboutyou.com/api/v1/products?page=1&per_page=200` resulted in a `422 Unprocessable Entity` response:
+{\"detail\": [{\"type\": \"less_than_equal\", \"loc\": [\"query\", \"per_page\"], \"msg\": \"Input should be less than or equal to 100\" (truncated...)
+"}
+[2026-04-17 20:01:05] sync.INFO: === Sync started: products === {"run_id":"f597a6dfc387628a","command":"products"}
+[2026-04-17 20:01:05] sync.INFO: ProductSync::syncAll started 
+[2026-04-17 20:01:47] sync.INFO: Fetched 88 products from PrestaShop 
+[2026-04-17 20:03:17] sync.INFO: AY upsertProducts batch ok {"count":50,"status":200,"batch_request_id":"f8de5f89-5c73-2f3b-fec2-67a0cd9f9dab"}
+[2026-04-17 20:04:53] sync.INFO: AY upsertProducts batch ok {"count":38,"status":200,"batch_request_id":"9e806ff2-0744-680f-b2ad-677a3fa42afe"}
+[2026-04-17 20:04:53] sync.INFO: ProductSync::syncAll completed {"fetched":88,"pushed":88,"skipped":0,"failed":0}
+[2026-04-17 20:04:53] sync.INFO: === Sync finished: products in 228.17s === {"ok":true,"run_id":"f597a6dfc387628a","command":"products"}
+[2026-04-17 20:07:09] sync.INFO: === Sync started: products === {"run_id":"0ba43dd463954af4","command":"products"}
+[2026-04-17 20:07:09] sync.INFO: ProductSync::syncAll started 
+[2026-04-17 20:07:43] sync.INFO: Fetched 88 products from PrestaShop 
+[2026-04-17 20:09:05] sync.WARNING: AyImageNormalizer: HTTP error fetching image {"url":"https://scr-wear.com/api/images/products/198/1084?ws_key=ObadaTeastAPI0096394785749032271","status":500}
+[2026-04-17 20:09:05] sync.WARNING: AyImageNormalizer: HTTP error fetching image {"url":"https://scr-wear.com/api/images/products/198/1087?ws_key=ObadaTeastAPI0096394785749032271","status":500}
+[2026-04-17 20:09:05] sync.WARNING: AyImageNormalizer: HTTP error fetching image {"url":"https://scr-wear.com/api/images/products/198/1089?ws_key=ObadaTeastAPI0096394785749032271","status":500}
+[2026-04-17 20:09:06] sync.WARNING: AyImageNormalizer: HTTP error fetching image {"url":"https://scr-wear.com/api/images/products/198/1090?ws_key=ObadaTeastAPI0096394785749032271","status":500}
+[2026-04-17 20:09:06] sync.WARNING: AyImageNormalizer: HTTP error fetching image {"url":"https://scr-wear.com/api/images/products/198/1091?ws_key=ObadaTeastAPI0096394785749032271","status":500}
+[2026-04-17 20:09:10] sync.WARNING: AyImageNormalizer: HTTP error fetching image {"url":"https://scr-wear.com/api/images/products/200/1119?ws_key=ObadaTeastAPI0096394785749032271","status":500}
+[2026-04-17 20:09:11] sync.WARNING: AyImageNormalizer: HTTP error fetching image {"url":"https://scr-wear.com/api/images/products/200/1120?ws_key=ObadaTeastAPI0096394785749032271","status":500}
+[2026-04-17 20:09:11] sync.WARNING: AyImageNormalizer: HTTP error fetching image {"url":"https://scr-wear.com/api/images/products/200/1121?ws_key=ObadaTeastAPI0096394785749032271","status":500}
+[2026-04-17 20:09:11] sync.WARNING: AyImageNormalizer: HTTP error fetching image {"url":"https://scr-wear.com/api/images/products/200/1122?ws_key=ObadaTeastAPI0096394785749032271","status":500}
+[2026-04-17 20:09:12] sync.WARNING: AyImageNormalizer: HTTP error fetching image {"url":"https://scr-wear.com/api/images/products/200/1123?ws_key=ObadaTeastAPI0096394785749032271","status":500}
+[2026-04-17 20:09:12] sync.WARNING: AyImageNormalizer: HTTP error fetching image {"url":"https://scr-wear.com/api/images/products/200/1124?ws_key=ObadaTeastAPI0096394785749032271","status":500}
+[2026-04-17 20:09:12] sync.WARNING: AyImageNormalizer: HTTP error fetching image {"url":"https://scr-wear.com/api/images/products/200/1125?ws_key=ObadaTeastAPI0096394785749032271","status":500}
+[2026-04-17 20:09:12] sync.WARNING: AyImageNormalizer: HTTP error fetching image {"url":"https://scr-wear.com/api/images/products/200/1126?ws_key=ObadaTeastAPI0096394785749032271","status":500}
+[2026-04-17 20:09:13] sync.WARNING: AyImageNormalizer: HTTP error fetching image {"url":"https://scr-wear.com/api/images/products/200/1127?ws_key=ObadaTeastAPI0096394785749032271","status":500}
+[2026-04-17 20:09:13] sync.WARNING: AyImageNormalizer: HTTP error fetching image {"url":"https://scr-wear.com/api/images/products/200/1128?ws_key=ObadaTeastAPI0096394785749032271","status":500}

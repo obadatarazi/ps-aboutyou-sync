@@ -1,0 +1,14 @@
+# Stock + price sync every 10 minutes
+*/10 * * * * /usr/bin/php /path/to/ps-aboutyou-sync/bin/sync.php stock >> /path/to/ps-aboutyou-sync/logs/cron-stock.log 2>&1
+
+# Import AboutYou orders every 5 minutes
+*/5 * * * * /usr/bin/php /path/to/ps-aboutyou-sync/bin/sync.php orders >> /path/to/ps-aboutyou-sync/logs/cron-orders.log 2>&1
+
+# Push PrestaShop status updates every 5 minutes
+*/5 * * * * /usr/bin/php /path/to/ps-aboutyou-sync/bin/sync.php order-status >> /path/to/ps-aboutyou-sync/logs/cron-order-status.log 2>&1
+
+# Incremental products every 15 minutes
+*/15 * * * * /usr/bin/php /path/to/ps-aboutyou-sync/bin/sync.php products:inc >> /path/to/ps-aboutyou-sync/logs/cron-products.log 2>&1
+
+# Full products daily at 02:00
+0 2 * * * /usr/bin/php /path/to/ps-aboutyou-sync/bin/sync.php products >> /path/to/ps-aboutyou-sync/logs/cron-full.log 2>&1

@@ -1,0 +1,17 @@
+{
+    "products": [],
+    "orders": [],
+    "processed": [],
+    "failed_orders": {
+        "sandbox-0-100000001396": {
+            "attempts": 1,
+            "reason": "Could not resolve AY items to PS product references for AY#sandbox-0-100000001396",
+            "permanent": true,
+            "quarantined": true,
+            "last_failed_at": "2026-04-20T13:06:34+00:00"
+        }
+    },
+    "last_sync": {
+        "orders": "2026-04-20 13:07:18"
+    }
+}
