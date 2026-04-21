@@ -23,3 +23,7 @@ Thumbs.db
 
 # Cache
 .cache/
+
+# Generated/cached files
+public/ay-normalized/
+public/logs/
